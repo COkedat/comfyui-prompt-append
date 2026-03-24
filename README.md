@@ -24,8 +24,8 @@ A custom node for ComfyUI that provides advanced, condition-based prompt appendi
 4. You can find the node under the utils/prompt category, named Conditional Prompt Append.
 
 ## How to Use
-* **base_prompt: Your main prompt text.
-* **search_prompt: The tags you want to look for in the base_prompt.
-* **append_prompt: The tags you want to add conditionally.
-* **prompt (Output): Result prompt text
-* **is_detected (Output): Outputs a BOOLEAN (True/False) value indicating if the search prompt was found, which can be routed to other logical nodes.
+* **base_prompt:** Your main prompt text.
+* **search_prompt:** The tags you want to look for in the base_prompt.
+* **append_prompt:** The tags you want to add conditionally.
+* **prompt (Output):** Result prompt text
+* **is_detected (Output):** Outputs a BOOLEAN (True/False) value indicating if the search prompt was found, which can be routed to other logical nodes.
