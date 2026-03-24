@@ -25,7 +25,13 @@ A custom node for ComfyUI that provides advanced, condition-based prompt appendi
 
 ## How to Use
 * **base_prompt:** Your main prompt text.
-* **search_prompt:** The tags you want to look for in the base_prompt.
-* **append_prompt:** The tags you want to add conditionally.
-* **prompt (Output):** Result prompt text
-* **is_detected (Output):** Outputs a BOOLEAN (True/False) value indicating if the search prompt was found, which can be routed to other logical nodes.
+* **search_prompt:** The tags you want to search for within the `base_prompt`.
+* **search_logic:** Determines whether to use `AND` or `OR` logic when searching for multiple tags.
+* **append_prompt:** Additional Prompt text you want to add conditionally.
+* **condition:** Choose the exact condition for appending the new prompts (Always, If Detected, If Not Detected).
+* **input_delimiter:** The delimiter used to split the input prompts (`base_prompt`, `search_prompt`, `append_prompt`).
+* **output_delimiter:** The delimiter used to join the tags in the final output prompt.
+* **skip_duplicate:** Prevents adding prompts from the `append_prompt` that already exist in the `base_prompt`.
+* **position:** Choose whether to add the new tags to the `front` or `back` of the base prompt.
+* **prompt (Output):** The final resulting prompt text.
+* **is_detected (Output):** Outputs a BOOLEAN (True/False) indicating whether the search tags were found, which can be routed to other logic nodes.

@@ -27,6 +27,12 @@ ComfyUI를 위한 고급 조건부 프롬프트 추가 커스텀 노드. 특정 
 ## 사용 방법
 * **base_prompt:** 기준이 되는 메인 프롬프트 텍스트.
 * **search_prompt:** `base_prompt` 안에서 찾고 싶은 대상 태그임.
-* **append_prompt:** 조건이 맞을 때 추가할 새로운 태그임.
+* **search_logic:** 여러 태그를 검색할 때 `AND` 또는 `OR` 논리를 적용할지 결정.
+* **append_prompt:** 조건이 맞을 때 추가할 새로운 프롬프트.
+* **condition:** 새 프롬프트를 어떤 조건(항상 추가, 감지될 때만, 감지 안 될 때만)에서 추가할지 선택.
+* **input_delimiter:** 입력 프롬프트(`base_prompt`, `search_prompt` 등)의 단어들을 쪼갤 때 사용하는 구분자(기준 기호).
+* **output_delimiter:** 최종 출력 프롬프트를 하나로 합칠 때 사용할 연결 구분자.
+* **skip_duplicate:** 추가하려는 프롬프트가 이미 `base_prompt`에 있을 경우, 중복으로 추가되는 것을 막아줌.
+* **position:** 새 프롬프트를 기준 프롬프트의 맨 앞(`front`)에 붙일지, 맨 뒤(`back`)에 붙일지 선택.
 * **prompt (Output):** 조건에 따라 최종적으로 결합된 프롬프트 결과물.
 * **is_detected (Output):** 검색 대상 프롬프트가 감지되었는지 여부를 BOOLEAN (True/False) 값으로 반환. 이 값을 다른 조건 노드나 스위치 노드로 연결해 사용가능.
