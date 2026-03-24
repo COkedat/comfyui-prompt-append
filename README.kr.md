@@ -26,7 +26,7 @@ ComfyUI를 위한 고급 조건부 프롬프트 추가 커스텀 노드. 특정 
 
 ## 사용 방법
 * **base_prompt:** 기준이 되는 메인 프롬프트 텍스트.
-* **search_prompt:** `base_prompt` 안에서 찾고 싶은 대상 태그임.
+* **search_prompt:** `base_prompt` 안에서 찾고 싶은 대상 태그.
 * **search_logic:** 여러 태그를 검색할 때 `AND` 또는 `OR` 논리를 적용할지 결정.
 * **append_prompt:** 조건이 맞을 때 추가할 새로운 프롬프트.
 * **condition:** 새 프롬프트를 어떤 조건(항상 추가, 감지될 때만, 감지 안 될 때만)에서 추가할지 선택.
