@@ -16,10 +16,12 @@ A custom node for ComfyUI that provides advanced, condition-based prompt appendi
 ## Installation
 1. Navigate to your ComfyUI custom nodes directory:
    ```bash
-   cd ComfyUI/custom_nodes/```
+   cd ComfyUI/custom_nodes/
+   ```
 2. Clone this repository:
    ```
-   git clone https://github.com/COkedat/comfyui-prompt-append```
+   git clone https://github.com/COkedat/comfyui-prompt-append
+   ```
 3. Restart ComfyUI.
 4. You can find the node under the utils/prompt category, named Conditional Prompt Append.
 

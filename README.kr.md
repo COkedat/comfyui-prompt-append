@@ -17,10 +17,12 @@ ComfyUI를 위한 고급 조건부 프롬프트 추가 커스텀 노드. 특정 
 ## 설치 방법
 1. ComfyUI 커스텀 노드 폴더로 이동:
    ```bash
-   cd ComfyUI/custom_nodes/```
+   cd ComfyUI/custom_nodes/
+   ```
 2. 이 레포지토리를 클론(Clone)함:
    ```
-   git clone https://github.com/COkedat/comfyui-prompt-append```
+   git clone https://github.com/COkedat/comfyui-prompt-append
+   ```
 3. ComfyUI 재시작.
 4. utils/prompt 카테고리에서 Conditional Prompt Append 노드를 찾아 사용.
 
