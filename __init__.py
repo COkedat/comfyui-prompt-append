@@ -1,9 +1,9 @@
 import re
 
 def clean_tag(tag: str) -> str:
-    """프롬프트에서 괄호와 가중치를 제거하고 순수 텍스트만 추출"""
+    """프롬프트에서 괄호와 가중치를 제거하고 순수 텍스트만 추출 + 소문자화"""
     cleaned = re.sub(r'[()\[\]{}]|:\d+(?:\.\d+)?', '', tag)
-    return cleaned.strip()
+    return cleaned.strip().lower()
 
 class ConditionalPromptAppendNode:
     """
